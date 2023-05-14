@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PZ_3</title>
+	</head>
+	<body>
+		<input type="text" id="inputText">
+		<button onclick="checkText()">Check Text</button>
+		<script>
+			function checkText() {
+				let input = document.getElementById("inputText").value;
+				if (input === "") {
+					alert("Error: input is empty!");
+				} else if (input.includes("hello")) {
+					document.body.style.backgroundColor = "lightgreen";
+				} else if (input.includes("world")) {
+					document.body.style.backgroundColor = "lightblue";
+				} else {
+					document.body.style.backgroundColor = "salmon";
+				}
+			}
+		</script>
+	</body>
+</html>
